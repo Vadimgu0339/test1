@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+Новости на сайте
+{% endblock %}
+
+{% block content %}
+<h2>hello</h2>
+<p>pepepepepe</p>
+новости на сайте
+{% for i in values %}
+    <p>{{ i }}</p>
+{% endfor %}
+{% for i in news %}
+    <div class="alert alert-warning">
+        <h3>{{i.title}}</h3>
+        <p>{{ i.anons}}</p>
+    </div>
+{% endfor %}
+{% include 'main/funny_text.html' %}
+{% endblock %}

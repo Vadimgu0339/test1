@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block content %}
+<h2>hello</h2>
+<p>pepepepepe</p>
+
+{% for i in values %}
+    <p>{{ i }}</p>
+{% endfor %}
+{% include 'main/funny_text.html' %}
+{% endblock %}
